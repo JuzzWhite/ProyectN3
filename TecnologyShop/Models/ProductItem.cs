@@ -25,7 +25,7 @@ namespace TecnologyShop.Models
         public virtual Product Product { get; set; }
         [DisplayFormat(DataFormatString = "{0:#,####}")]
         [Range(1, int.MaxValue, ErrorMessage = "Price should" +
-            " be greater than ${1}")]
+            " be greater than ₡{1}")]
         public double Price { get; set; }
 
 

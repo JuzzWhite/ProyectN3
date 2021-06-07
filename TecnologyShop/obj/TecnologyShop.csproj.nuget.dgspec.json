@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jerry\\source\\repos\\TecnologyShop\\TecnologyShop\\TecnologyShop.csproj": {}
+    "C:\\Users\\Jerry\\Desktop\\copia proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jerry\\source\\repos\\TecnologyShop\\TecnologyShop\\TecnologyShop.csproj": {
+    "C:\\Users\\Jerry\\Desktop\\copia proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jerry\\source\\repos\\TecnologyShop\\TecnologyShop\\TecnologyShop.csproj",
+        "projectUniqueName": "C:\\Users\\Jerry\\Desktop\\copia proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj",
         "projectName": "TecnologyShop",
-        "projectPath": "C:\\Users\\Jerry\\source\\repos\\TecnologyShop\\TecnologyShop\\TecnologyShop.csproj",
+        "projectPath": "C:\\Users\\Jerry\\Desktop\\copia proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj",
         "packagesPath": "C:\\Users\\Jerry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jerry\\source\\repos\\TecnologyShop\\TecnologyShop\\obj\\",
+        "outputPath": "C:\\Users\\Jerry\\Desktop\\copia proyecto\\ProyectN3\\TecnologyShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
