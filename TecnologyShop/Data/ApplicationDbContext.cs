@@ -16,5 +16,6 @@ namespace TecnologyShop.Data
         public DbSet<Category> Category { get; set; }
         public DbSet<SubCategory> SubCategory { get; set; }
         public DbSet<CatalogueItem> CatalogueItem { get; set; }
+        public DbSet<Coupon> Coupon { get; set; }
     }
 }

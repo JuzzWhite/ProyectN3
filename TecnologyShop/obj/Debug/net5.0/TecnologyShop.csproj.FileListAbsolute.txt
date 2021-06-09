@@ -918,3 +918,6 @@ C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\R
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\CatalogueItem\Edit.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\CatalogueItem\Details.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\CatalogueItem\Delete.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Coupon\Index.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Coupon\Create.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Coupon\Edit.cshtml.g.cs
