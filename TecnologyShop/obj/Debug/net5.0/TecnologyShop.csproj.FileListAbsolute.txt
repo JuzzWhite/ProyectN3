@@ -894,8 +894,6 @@ C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\R
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\_ViewImports.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\_ViewStart.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Views\Shared\_CreateAndBackToListButton.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Views\Shared\_CreateButtonPartial.cshtml.g.cs
@@ -921,3 +919,8 @@ C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\R
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Coupon\Index.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Coupon\Create.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Coupon\Edit.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Coupon\Details.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Coupon\Delete.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\Views\Home\Index.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\bin\Debug\net5.0\libman.json

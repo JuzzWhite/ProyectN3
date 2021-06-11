@@ -124,8 +124,51 @@ namespace TecnologyShop.Areas.Admin.Controllers
         }
 
 
-        //DETAILS
+        //DETAILS-get
+        public async Task<IActionResult> Details(int? id)
+        {
+            if(id==null)
+            {
+                return NotFound();
+            }
+
+            var cupon = await _db.Coupon.FirstOrDefaultAsync(x=>x.Id==id);
+
+            if(cupon ==null)
+            {
+                return NotFound(); 
+            }
+            return View(cupon);
+        }
+
+
+
         //DELETE
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var cupon = await _db.Coupon.FirstOrDefaultAsync(x => x.Id == id);
+
+            if (cupon == null)
+            {
+                return NotFound();
+            }
+            return View(cupon);
+        }
+
         //DELETE POST
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var cupon = await _db.Coupon.SingleOrDefaultAsync(x => x.Id == id);
+            _db.Remove(cupon);
+            await _db.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

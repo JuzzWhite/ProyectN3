@@ -72,6 +72,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "datatables.net": {
+              "target": "Package",
+              "version": "[1.10.24, )"
             }
           },
           "imports": [
