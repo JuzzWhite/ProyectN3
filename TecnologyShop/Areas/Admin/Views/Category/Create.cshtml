@@ -1,42 +1,80 @@
-﻿@model Category
+﻿<link href="~/css/forms.css" rel="stylesheet" />
+@model Category
 @{
     ViewData["Title"] = "Create";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <br />
-<h2 class="text-info">Create Category</h2>
+<h2>Create Category</h2>
 <br />
-<form method="post" asp-action="Create">
-    <div class="border backgroundWhite">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="form-group row">
-            <div class="col-2">
-                <label asp-for="Name" class="col-form-label"></label>
-            </div>
-            <div class="col-5">
-                <input asp-for="Name" class="form-control" />
-            </div>
-            <span asp-validation-for="Name" class="text-danger"></span>
-        </div>
 
-        <div class="form-group row">
-            <div class="col-2">
-                <label asp-for="RegisterDate" class="col-form-label"></label>
+    <form class="form" method="post" asp-action="Create">
+        <div class="border backgroundWhite">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Name" class="col-form-label"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="Name" class="field form-control" />
+                </div>
+                <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="col-5">
-                <input class="form-control" type="date" value=@ViewBag.Fecha
-                       asp-for="RegisterDate">
-            </div>
-            <span asp-validation-for="RegisterDate" class="text-danger"></span>
-        </div>
-        <div class="form-group row">
-            <div class="col-5 offset-2">
-                <partial name="_CreateAndBackToListButton" />
-            </div>
-        </div>
-    </div>
-</form>
 
-@section Scripts{
-    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+
+
+            <div class="form-group row">
+                <div class="col-2">
+                     <label asp-for="RegisterDate" class="col-form-label"></label>
+                    @* @Html.LabelFor(model=> model.RegisterDate, htmlAttributes: new {@class = "controll-label"}) *@
+                </div>
+                <div class="col-5">
+                    @* <input class="form-control" type="date" value=@ViewBag.Fecha
+                        asp-for="RegisterDate">*@
+                    @Html.TextBoxFor(model=>model.RegisterDate, new { @class="form-controll mydatepicker", @placeholder = "mm.dd.yyyy"})
+                </div>
+                <span asp-validation-for="RegisterDate" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group row">
+                <div class="col-5 offset-2">
+                    <partial name="_CreateAndBackToListButton" />
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+<link href="~/lib/jqueryui/themes/redmond/jquery-ui.min.css" rel="stylesheet" />
+ @section Scripts{
+        @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+<script src="~/lib/jqueryui/jquery-ui.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+
+        $(".mydatepicker")
+            .wrap('<div class="input-group">')
+            .datepicker({
+                dateFormat: "dd.mm.yy",
+                changeYear: true,
+                yearRange: "-0:+0",//year selection is possible from now
+                showOn: "both"
+            })
+            .next("button").button({
+                icons: { primary: "ui-icon-calendar" },
+                label: "Select Date",
+                text: false
+            })
+            .addClass("btn btn-default")
+            .wrap('＜span class="input-group-btn"＞')
+            .find('.ui-button-text')
+            .css({
+                'visibility': 'hidden',
+                'display': 'inline'
+            });
+    });
+</script>
+    }

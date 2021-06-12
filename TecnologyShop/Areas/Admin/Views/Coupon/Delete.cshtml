@@ -1,12 +1,13 @@
-﻿@model TecnologyShop.Models.Coupon
+﻿<link href="~/css/forms.css" rel="stylesheet" />
+@model TecnologyShop.Models.Coupon
 @{
     ViewData["Title"] = "Delete";
 }
 
 <br />
-<h2 class="text-info">Delete Coupon</h2>
+<h2>Delete Coupon</h2>
 <br />
-<form asp-action="Delete" method="post" enctype="multipart/form-data">
+<form class="form" asp-action="Delete" method="post" enctype="multipart/form-data">
     <div class="row  backgroundWhiteBorder">
         <br />
         <div class=" col-12 border">
@@ -23,7 +24,7 @@
                         <label asp-for="Name" class="custom-label"></label>
                     </div>
                     <div class="col-5">
-                        <input asp-for="Name" class="form-control" />
+                        <input asp-for="Name" class="field form-control" />
                     </div>
                 </div>
 
@@ -40,7 +41,7 @@
                         <label asp-for="Discount" class="custom-label"></label>
                     </div>
                     <div class="col-5">
-                        <input asp-for="Discount" class="form-control" />
+                        <input asp-for="Discount" class="field form-control" />
                     </div>
                 </div>
                 <div class="form-group row">
@@ -48,7 +49,7 @@
                         <label asp-for="MinimunAmount" class="custom-label"></label>
                     </div>
                     <div class="col-5">
-                        <input asp-for="MinimunAmount" class="form-control" />
+                        <input asp-for="MinimunAmount" class="field form-control" />
                     </div>
                 </div>
                 <div class="form-group row">
@@ -56,7 +57,7 @@
                         <label asp-for="IsActive" class="custom-label"></label>
                     </div>
                     <div class="col-5">
-                        <input type="checkbox" asp-for="IsActive" class="form-control" />
+                        <input type="checkbox" asp-for="IsActive" class="field form-control" />
                     </div>
                 </div>
 

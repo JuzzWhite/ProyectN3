@@ -1,4 +1,5 @@
-﻿@model TecnologyShop.Models.View_Model.SubCategoryAndcategoryViewModel
+﻿<link href="~/css/forms.css" rel="stylesheet" />
+@model TecnologyShop.Models.View_Model.SubCategoryAndcategoryViewModel
 @using TecnologyShop.Extensions
 
 @{
@@ -7,14 +8,14 @@
 }
 
 <br />
-<h2 class="text-info">Create Sub Category</h2>
+<h2>Create Sub Category</h2>
 <br />
 
 <partial name="_StatusMessagePartial" model="Model.StatusMessage" />
 
 <div class="border backgroundWhite row">
     <div class="col-8 border-right">
-        <form asp-action="Create">
+        <form class="form" asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group row">
                 <div class="col-3">
@@ -23,7 +24,7 @@
                 <div class="col-5">
                     <select id="ddlCategorylist" asp-for="SubCategory.CategoryId"
                             asp-items="Model.CategoryList.ToSelectListItem(Model.SubCategory.CategoryId)"
-                            class="form-control"></select>
+                            class="field form-control"></select>
                 </div>
             </div>
             <div class="form-group row">
@@ -31,7 +32,7 @@
                     <label asp-for="SubCategory.Name" class="col-form-label"></label>
                 </div>
                 <div class="col-5">
-                    <input asp-for="SubCategory.Name" class="form-control" />
+                    <input asp-for="SubCategory.Name" class="field form-control" />
                 </div>
                 <span asp-validation-for="SubCategory.Name" class="text-danger"></span>
             </div>

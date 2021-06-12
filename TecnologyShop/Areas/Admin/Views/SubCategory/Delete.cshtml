@@ -1,11 +1,13 @@
-﻿@model TecnologyShop.Models.SubCategory
+﻿<link href="~/css/forms.css" rel="stylesheet" />
+@model TecnologyShop.Models.SubCategory
+
 @{
     ViewData["Title"] = "Delete";
 }
 <br />
-<h2 class="text-info">Sub Category Delete</h2>
+<h2>Sub Category Delete</h2>
 <br />
-<form method="post">
+<form class="form" method="post">
     <div class="border backgroundWhite">
         <input type="hidden" asp-for="Id" />
         <fieldset disabled>
@@ -14,7 +16,7 @@
                     <label asp-for="Name" class="custom-label"></label>
                 </div>
                 <div class="col-5">
-                    <input asp-for="Name" class="form-control" />
+                    <input asp-for="Name" class="field form-control" />
                 </div>
             </div>
             <div class="form-group row">
@@ -22,7 +24,7 @@
                     <label asp-for="Category.Name" class="custom-label"></label>
                 </div>
                 <div class="col-5">
-                    <input asp-for="Category.Name" class="form-control" />
+                    <input asp-for="Category.Name" class="field form-control" />
                 </div>
             </div>
         </fieldset>

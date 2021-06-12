@@ -1,20 +1,21 @@
-﻿@model TecnologyShop.Models.Category
+﻿<link href="~/css/forms.css" rel="stylesheet" />
+@model TecnologyShop.Models.Category
 @{
     ViewData["Title"] = "Delete";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <br />
-<h2 class="text-info">Delete Category</h2>
+<h2>Delete Category</h2>
 <br />
 
-<form method="post" asp-action="Delete">
+<form class="form" method="post" asp-action="Delete">
     <div class="border backgroundWhite">
         <div class="form-group row">
             <div class="col-2">
                 <label asp-for="Name" class="col-form-label"></label>
             </div>
             <div class="col-5">
-                <input asp-for="Name" readonly class="form-control" />
+                <input asp-for="Name" readonly class="field form-control" />
             </div>
         </div>
         <div class="form-group row">

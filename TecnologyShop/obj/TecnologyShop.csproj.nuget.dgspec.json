@@ -73,9 +73,9 @@
               "target": "Package",
               "version": "[5.0.2, )"
             },
-            "datatables.net": {
+            "datatables": {
               "target": "Package",
-              "version": "[1.10.24, )"
+              "version": "[1.0.0, )"
             }
           },
           "imports": [

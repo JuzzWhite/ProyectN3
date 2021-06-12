@@ -1,4 +1,5 @@
-﻿@model IEnumerable<SubCategory>
+﻿<link href="~/css/disenoTablas.css" rel="stylesheet" />
+@model IEnumerable<SubCategory>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -9,7 +10,7 @@
 <div class="border backgroundWhite">
     <div class="row">
         <div class="col-6">
-            <h2 class="text-info"> Sub Category List</h2>
+            <h2> Sub Category List</h2>
         </div>
         <div class="col-6 text-right">
             <partial name="_CreateButtonPartial" />
@@ -19,31 +20,35 @@
     <div>
         @if (Model.Count() > 0)
         {
-            <table class="table table-striped border">
-                <tr class="table-secondary">
-                    <th>
-                        @Html.DisplayNameFor(m => m.Name)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(m => m.Category.Name)
-                    </th>
-                    <th></th>
-                    <th></th>
-                </tr>
+            <table class="content-table table border">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(m => m.Name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(m => m.Category.Name)
+                        </th>
+                        <th></th>
+                        <th>Mantence</th>
+                    </tr>
+                </thead>
                 @foreach (var item in Model)
                 {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(m => item.Name)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(m => item.Category.Name)
-                        </td>
-                        <td>
-                            <partial name="_TableButtonPartial" model="item.Id" />
-                        </td>
-                    </tr>
-                }
+                    <tbody>
+                        <tr>
+                            <td>
+                             @Html.DisplayFor(m => item.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => item.Category.Name)
+                            </td>
+                            <td>
+                                <partial name="_TableButtonPartial" model="item.Id" />
+                            </td>
+                      </tr>
+                    </tbody>
+                 }
             </table>
         }
         else

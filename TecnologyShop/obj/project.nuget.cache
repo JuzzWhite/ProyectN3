@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Ybjvt+8iF36bOsWLRbhe3exlP2IRYjZFO8IlvulTT3xayibLU+SL9Ix67J2LyhTF3hEjsM3zc6DxlkhEy2RBxw==",
+  "dgSpecHash": "GkJarYkQGsfyTgglxo2PGKRO0VsEdX7zl6/qPch3T0GsnF+XEIVb5PEgMYC9tfPo5xI/2sSUXWI2mn8xTIARlA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jerry\\Desktop\\copia proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Jerry\\.nuget\\packages\\datatables.net\\1.10.24\\datatables.net.1.10.24.nupkg.sha512",
+    "C:\\Users\\Jerry\\.nuget\\packages\\datatables\\1.0.0\\datatables.1.0.0.nupkg.sha512",
     "C:\\Users\\Jerry\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\Jerry\\.nuget\\packages\\jquery\\1.7.0\\jquery.1.7.0.nupkg.sha512",
     "C:\\Users\\Jerry\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.6\\microsoft.aspnetcore.cryptography.internal.5.0.6.nupkg.sha512",
     "C:\\Users\\Jerry\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.6\\microsoft.aspnetcore.cryptography.keyderivation.5.0.6.nupkg.sha512",
     "C:\\Users\\Jerry\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\5.0.6\\microsoft.aspnetcore.diagnostics.entityframeworkcore.5.0.6.nupkg.sha512",
