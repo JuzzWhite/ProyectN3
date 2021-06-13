@@ -42,7 +42,7 @@
                     <label asp-for="CatalogueItem.Price" class="col-form-label"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="CatalogueItem.Price" class="field form-control" />
+                    <input asp-for="CatalogueItem.Price" class="field" />
                 </div>
                 <span asp-validation-for="CatalogueItem.Price" class="text-danger"></span>
             </div>
@@ -51,7 +51,7 @@
                     <label asp-for="CatalogueItem.Image" class="col-form-label"></label>
                 </div>
                 <div class="col-8">
-                    <input type="file" name="files" multiple class="field form-control" />
+                    <input type="file" name="files" multiple class="field" />
                 </div>
             </div>
 
@@ -60,7 +60,7 @@
                     <label asp-for="CatalogueItem.CategoryId" class="col-form-label"></label>
                 </div>
                 <div class="col-8">
-                    <select asp-for="@Model.CatalogueItem.CategoryId" id="CategoryId" asp-items="Model.Category.ToSelectListItem(Model.CatalogueItem.CategoryId)" class="field form-control"></select>
+                    <select asp-for="@Model.CatalogueItem.CategoryId" id="CategoryId" asp-items="Model.Category.ToSelectListItem(Model.CatalogueItem.CategoryId)" class="field"></select>
                 </div>
             </div>
             <div class="form-group row">
@@ -68,7 +68,7 @@
                     <label asp-for="CatalogueItem.SubCategoryId" class="col-form-label"></label>
                 </div>
                 <div class="col-8">
-                    <select asp-for="@Model.CatalogueItem.SubCategoryId" name="SubCategoryId" id="SubCategoryId" asp-items="@(new SelectList(string.Empty,"Id","Name"))" class="field form-control"></select>
+                    <select asp-for="@Model.CatalogueItem.SubCategoryId" name="SubCategoryId" id="SubCategoryId" asp-items="@(new SelectList(string.Empty,"Id","Name"))" class="field"></select>
                 </div>
             </div>
             <div class="form-group row">
@@ -76,7 +76,7 @@
                     <label asp-for="CatalogueItem.Stock" class="col-form-label"></label>
                 </div>
                 <div class="col-8">
-                    <select asp-for="CatalogueItem.Stock" asp-items="Html.GetEnumSelectList<CatalogueItem.OnStock>()" class="field form-control"></select>
+                    <select asp-for="CatalogueItem.Stock" asp-items="Html.GetEnumSelectList<CatalogueItem.OnStock>()" class="field"></select>
                 </div>
             </div>
 

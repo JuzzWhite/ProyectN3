@@ -26,7 +26,7 @@ namespace TecnologyShop.Controllers
         {
             LandingPageVM model = new LandingPageVM()
             {
-                CatalogueItem = await _db.CatalogueItem.Include(x => x.SubCategory).ToListAsync(),
+                CatalogueItem = await _db.CatalogueItem.Include(x => x.Category).Include(x=>x.SubCategory).ToListAsync(),
                 Category = await _db.Category.ToListAsync(),
                 Coupon = await _db.Coupon.Where(x => x.IsActive == true).ToListAsync()
             };

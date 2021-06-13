@@ -24,7 +24,7 @@
                 <div class="col-5">
                     <select id="ddlCategorylist" asp-for="SubCategory.CategoryId"
                             asp-items="Model.CategoryList.ToSelectListItem(Model.SubCategory.CategoryId)"
-                            class="field form-control"></select>
+                            class="field"></select>
                 </div>
             </div>
             <div class="form-group row">
@@ -32,7 +32,7 @@
                     <label asp-for="SubCategory.Name" class="col-form-label"></label>
                 </div>
                 <div class="col-5">
-                    <input asp-for="SubCategory.Name" class="field form-control" />
+                    <input asp-for="SubCategory.Name" class="field" />
                 </div>
                 <span asp-validation-for="SubCategory.Name" class="text-danger"></span>
             </div>

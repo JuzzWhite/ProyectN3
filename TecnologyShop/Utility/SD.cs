@@ -7,6 +7,17 @@ namespace TecnologyShop.Utility
 {
     public class SD
     {
+
+
+        public const string ManagerUser = "Manager";
+        public const string SalesAgent = "Sales Agent";
+        public const string Costumer = "Costumer";
+
+
+
+
+
+
         //imagen que se va a crear por default
         public const string DefaultProductImage = "DefaultImageProduct.png";
 
