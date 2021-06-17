@@ -6,29 +6,29 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Areas\Sales\Data\**" />
-    <Compile Remove="Areas\Sales\Models\**" />
+    <Compile Remove="Areas\Customer\Data\**" />
+    <Compile Remove="Areas\Customer\Models\**" />
     <Compile Remove="Controllers\**" />
-    <Content Remove="Areas\Sales\Data\**" />
-    <Content Remove="Areas\Sales\Models\**" />
+    <Content Remove="Areas\Customer\Data\**" />
+    <Content Remove="Areas\Customer\Models\**" />
     <Content Remove="Controllers\**" />
-    <EmbeddedResource Remove="Areas\Sales\Data\**" />
-    <EmbeddedResource Remove="Areas\Sales\Models\**" />
+    <EmbeddedResource Remove="Areas\Customer\Data\**" />
+    <EmbeddedResource Remove="Areas\Customer\Models\**" />
     <EmbeddedResource Remove="Controllers\**" />
-    <None Remove="Areas\Sales\Data\**" />
-    <None Remove="Areas\Sales\Models\**" />
+    <None Remove="Areas\Customer\Data\**" />
+    <None Remove="Areas\Customer\Models\**" />
     <None Remove="Controllers\**" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="Areas\Admin\Views\User\Edit.cshtml" />
     <None Include="Areas\Admin\Views\User\Index.cshtml" />
-    <None Include="Areas\Sales\Views\Cart\Index.cshtml" />
-    <None Include="Areas\Sales\Views\Cart\Summary.cshtml" />
-    <None Include="Areas\Sales\Views\Order\Confirm.cshtml" />
-    <None Include="Areas\Sales\Views\Order\ManageOrder.cshtml" />
-    <None Include="Areas\Sales\Views\Order\OrderHistory.cshtml" />
-    <None Include="Areas\Sales\Views\Order\OrderPickup.cshtml" />
+    <None Include="Areas\Customer\Views\Cart\Index.cshtml" />
+    <None Include="Areas\Customer\Views\Cart\Summary.cshtml" />
+    <None Include="Areas\Customer\Views\Order\Confirm.cshtml" />
+    <None Include="Areas\Customer\Views\Order\ManageOrder.cshtml" />
+    <None Include="Areas\Customer\Views\Order\OrderHistory.cshtml" />
+    <None Include="Areas\Customer\Views\Order\OrderPickup.cshtml" />
   </ItemGroup>
 
   <ItemGroup>

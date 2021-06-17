@@ -10,10 +10,10 @@ namespace TecnologyShop.Utility
     {
 
 
-        public const string ManagerUser = "Manager";
-        public const string SalesAgent = "SalesAgent";
-        public const string Costumer = "Sales";
-        public const string FrontDeskUser = "FrontDesk";
+        public const string ManagerUser = "Manager"; //el mero bicho
+        public const string SalesAgent = "SalesAgent"; //el agente que vendo en este caso seria como el kitchen del profe
+        public const string CustomerUser = "Customer"; //el que compra
+        public const string FrontDeskUser = "FrontDesk"; //el que modifica las vistas principales
 
         public const string ssShoppingCartCount = "ssCartCount";
 

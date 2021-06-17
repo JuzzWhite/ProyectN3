@@ -13,69 +13,195 @@
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
           crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="~/css/footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css" />
 
 
 
 
 </head>
 <body>
-    <header class="header" id="header">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm  border-bottom box-shadow mb-3">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-white bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TecnologyShop</a>
+                <a class="navbar-brand" asp-area="Customer" asp-controller="Home" asp-action="Index">
+                    @*<img src="~/images/LogoLargoTS.png" style="width:30%; height:20%;" />*@
+                    TechnologyShop
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                    @*<partial name="_LoginPartial" />*@
-                </div>
+                        @if (User.IsInRole(TecnologyShop.Utility.SD.ManagerUser))
+                        {
+                            <li class="nav-item dropdown text-white-50">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropDownMenuLink"
+                                   role="button" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    Content Management
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navabarDropDownMenuLink">
+                                    <a class="dropdown-item" asp-action="Index"
+                                       asp-controller="Category" asp-area="Admin">Category</a>
+                                    <a class="dropdown-item" asp-action="Index"
+                                       asp-controller="SubCategory" asp-area="Admin">SubCategory</a>
+                                    <a class="dropdown-item" asp-action="Index"
+                                       asp-controller="CatalogueItem" asp-area="Admin">Products</a>
+                                    <a class="dropdown-item" asp-action="Index"
+                                       asp-controller="Coupon" asp-area="Admin">Coupon</a>
+                                    <a class="dropdown-item" asp-action="Index"
+                                       asp-controller="User" asp-area="Admin">Users</a>
+                                </div>
+                            </li>
+                        }
 
-
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item dropdown text-white-50">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropDownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Content Management
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropDownMenuLink">
-                                <a class="dropdown-item" asp-action="Index" asp-controller="Category" asp-area="Admin">Category</a>
-                                <a class="dropdown-item" asp-action="Index" asp-controller="SubCategory" asp-area="Admin">Subcategory</a>
-                                <a class="dropdown-item" asp-action="Index" asp-controller="CatalogueItem" asp-area="Admin">Products</a>
-                                <a class="dropdown-item" asp-action="Index" asp-controller="Coupon" asp-area="Admin">Coupon</a>
-                                @*colocado aqui para las pruebas*@
-                                <a class="dropdown-item" asp-action="ManageOrder" asp-controller="Order" asp-area="Sales">Manager Order</a> @*cuando terminemos, hay que revisar bien las opciones*@
-                                <a class="dropdown-item" asp-action="OrderPickup" asp-controller="Order" asp-area="Sales">Order Pickup</a>
-
-                                @*<a asp-area="Customer" asp-controller="Order" asp-action="OrderHistory" class="nav-link">Order History</a>
-
-                                <a asp-area="Customer" asp-controller="Cart" asp-action="Index" class="nav-link">
-                                    @{
-                                        var count = HttpContextAccessor.HttpContext.Session.GetInt32(
-                                            SD.ssShoppingCartCount);
+                        @if (User.IsInRole(SD.FrontDeskUser) || User.IsInRole(SD.SalesAgent) || User.IsInRole(SD.ManagerUser))
+                        {
+                            <li class="nav-item dropdown text-white-50">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropDownMenuLink"
+                                   role="button" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    Order
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navabarDropDownMenuLink">
+                                    @if (User.IsInRole(SD.SalesAgent) || User.IsInRole(SD.ManagerUser))
+                                    {
+                                        <a class="dropdown-item" asp-action="ManageOrder"
+                                           asp-controller="Order" asp-area="Customer">
+                                            Manager Order
+                                        </a>
                                     }
-                                    <i class="fas fa-shopping-cart"></i> &nbsp;(@count)
-                                </a>*@
+                                    @if (User.IsInRole(SD.FrontDeskUser) || User.IsInRole(SD.ManagerUser))
+                                    {
+                                        <a class="dropdown-item" asp-action="OrderPickup"
+                                           asp-controller="Order" asp-area="Customer">
+                                            Order Pickup
+                                        </a>
+                                    }
+                                </div>
+                            </li>
+                        }
 
+                        @if (User.IsInRole(SD.ManagerUser) || User.IsInRole(SD.CustomerUser))
+                        {
+                            <li class="nav-item">
+                                <a asp-area="Customer" asp-controller="Order" asp-action="OrderHistory" class="nav-link">
+                                    Order History
+                                </a>
+                            </li>
+                        }
+                        @if (User.IsInRole(SD.CustomerUser))
+                        {
+                            @if (HttpContextAccessor.HttpContext.Session.GetInt32(SD.ssShoppingCartCount) != null)
+                            {
+                                <li style="color:white">
+                                    <a asp-area="Customer" asp-controller="Cart" asp-action="Index" class="nav-link">
+                                        @{
+                                            var count = HttpContextAccessor.HttpContext.Session.GetInt32(
+                                                SD.ssShoppingCartCount);
+                                        }
+                                        <i class="fas fa-shopping-cart"></i> &nbsp;(@count)
 
-                            </div>
+                                    </a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li style="color:white">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-shopping-cart"></i> &nbsp;(0)
+                                    </a>
+                                </li>
 
-
-
-
-                        </li>
-
+                            }
+                        }
                     </ul>
                     @*implemented partial view _LoginPartial*@
                     <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - TecnologyShop - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+
+
+<!--<header class="header" id="header">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm  border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">TecnologyShop</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </li>
+                </ul>-->
+@*<partial name="_LoginPartial" />*@
+<!--</div>
+
+
+<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+    <ul class="navbar-nav flex-grow-1">
+        <li class="nav-item dropdown text-white-50">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropDownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Content Management
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropDownMenuLink">
+                <a class="dropdown-item" asp-action="Index" asp-controller="Category" asp-area="Admin">Category</a>
+                <a class="dropdown-item" asp-action="Index" asp-controller="SubCategory" asp-area="Admin">Subcategory</a>
+                <a class="dropdown-item" asp-action="Index" asp-controller="CatalogueItem" asp-area="Admin">Products</a>
+                <a class="dropdown-item" asp-action="Index" asp-controller="Coupon" asp-area="Admin">Coupon</a>-->
+@*colocado aqui para las pruebas*@
+<!--<a class="dropdown-item" asp-action="ManageOrder" asp-controller="Order" asp-area="Sales">Manager Order</a>--> @*cuando terminemos, hay que revisar bien las opciones*@
+<!--<a class="dropdown-item" asp-action="OrderPickup" asp-controller="Order" asp-area="Sales">Order Pickup</a>-->
+@*<a asp-area="Customer" asp-controller="Order" asp-action="OrderHistory" class="nav-link">Order History</a>
+
+    <a asp-area="Customer" asp-controller="Cart" asp-action="Index" class="nav-link">
+        @{
+            var count = HttpContextAccessor.HttpContext.Session.GetInt32(
+                SD.ssShoppingCartCount);
+        }
+        <i class="fas fa-shopping-cart"></i> &nbsp;(@count)
+    </a>*@
+
+
+<!--</div>
+
+
+
+
+    </li>
+
+</ul>-->
+@*implemented partial view _LoginPartial*@
+<!--<partial name="_LoginPartial" />
                 </div>
 
 
@@ -87,7 +213,7 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
-            @RenderBody()
+            //aqui va un arroba// RenderBody()
         </main>
     </div>
 
@@ -98,6 +224,6 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>    @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/js/site.js" asp-append-version="true"></script>    //aqui va un arroba// await RenderSectionAsync("Scripts", required: false)
 </body>
-</html>
+</html>-->

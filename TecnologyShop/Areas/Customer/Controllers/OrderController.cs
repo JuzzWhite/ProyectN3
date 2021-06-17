@@ -12,9 +12,9 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TecnologyShop.Areas.Sales.Controllers
+namespace TecnologyShop.Areas.Customer.Controllers
 {
-    [Area("Sales")]
+    [Area("Customer")]
     public class OrderController : Controller
     {
         private ApplicationDbContext _db;
@@ -157,7 +157,7 @@ namespace TecnologyShop.Areas.Sales.Controllers
             };
 
             StringBuilder param = new StringBuilder();
-            param.Append("/Sales/Order/OrderPickup?productPage=:");
+            param.Append("/Customer/Order/OrderPickup?productPage=:");
             param.Append("&searchName=");
             if (searchName != null)
             {

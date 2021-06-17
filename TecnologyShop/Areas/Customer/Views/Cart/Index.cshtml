@@ -17,7 +17,7 @@
                             Shopping Cart
                         </div>
                         <div class="col-6 text-right">
-                            <a asp-area="Sales" asp-controller="Home" asp-action="Index"
+                            <a asp-area="Customer" asp-controller="Home" asp-action="Index"
                                class="btn btn-outline-info btn-sm">Continue shopping</a>
                         </div>
                     </div>
@@ -107,7 +107,7 @@
                             <div class="col-12 col-md-6 offset-md-1 col-lg-4 offset-lg-3 pr-4">
                                 <ul class="list-group">
                                     <li class="list-group-item d-flex justify-content-between bg-light">
-                                        <span class="text-info">Total (USD)</span>
+                                        <span class="text-info">Total (Colones)</span>
                                         <strong class="text-info">$<span id="txtOrderTotal">
                                             @Model.OrderHeader.OrderTotal.ToString("#.##")</span></strong>
                                     </li>
@@ -119,7 +119,7 @@
                     </div>
                     <div class="card-footer">
                         <div class="col-12 col-lg-4 offset-lg-8 col-md-6 offset-md-6">
-                            <a asp-action="Summary" asp-area="Sales" asp-controller="Cart"
+                            <a asp-action="Summary" asp-area="Customer" asp-controller="Cart"
                                class="btn btn-success form-control">Summary</a>
                         </div>
                     </div>

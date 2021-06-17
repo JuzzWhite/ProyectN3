@@ -16,7 +16,7 @@ using TecnologyShop.Utility;
 
 namespace TecnologyShop.Controllers
 {
-    [Area("Sales")]
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ApplicationDbContext _db;
@@ -39,7 +39,7 @@ namespace TecnologyShop.Controllers
         }
 
         [Authorize]
-        //[Authorize(Roles = "Manager,Counter,Sales")]
+        //[Authorize(Roles = "Manager,Counter,Customer")]
         public async Task<IActionResult> Details(int id)
         {
             var CatalogueItemFromDb =
@@ -125,7 +125,6 @@ namespace TecnologyShop.Controllers
                 return View(cartObj);
             }
         }
-
         public IActionResult Privacy()
         {
             return View();

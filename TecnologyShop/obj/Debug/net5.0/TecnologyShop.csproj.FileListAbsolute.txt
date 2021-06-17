@@ -1396,10 +1396,6 @@ Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\Views\Home\Index.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\Views\Home\Privacy.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\_ViewImports.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\_ViewStart.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Views\Shared\_CreateAndBackToListButton.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Views\Shared\_CreateButtonPartial.cshtml.g.cs
@@ -1419,7 +1415,6 @@ Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\TecnologyShop.Views.pdb
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\TecnologyShop.csproj.CopyComplete
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\TecnologyShop.genruntimeconfig.cache
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\Views\Home\Details.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Views\Shared\_IndividualOrderDetails.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\AccessDenied.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ConfirmEmailChange.cshtml.g.cs
@@ -1437,12 +1432,6 @@ Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\bin\Debug\net5.0\Stripe.net.dll
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\Edit.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\Index.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\Views\Cart\Index.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\Views\Cart\Summary.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\Views\Order\Confirm.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\Views\Order\ManageOrder.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\Views\Order\OrderHistory.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\Views\Order\OrderPickup.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\ChangePassword.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\DeletePersonalData.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\Disable2fa.cshtml.g.cs
@@ -1461,3 +1450,14 @@ Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\_ManageNav.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\_StatusMessage.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\_ViewImports.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Cart\Index.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Cart\Summary.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Details.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Index.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Privacy.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Order\Confirm.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Order\ManageOrder.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Order\OrderHistory.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Order\OrderPickup.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\_ViewImports.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\_ViewStart.cshtml.g.cs

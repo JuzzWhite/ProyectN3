@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 
 namespace TecnologyShop.Areas.Admin.Controllers
 {
-    [Area("Sales")]
+    [Area("Customer")]
     public class CartController : Controller
     {
         private readonly ApplicationDbContext _db;
