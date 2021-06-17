@@ -6,6 +6,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\Sales\Data\**" />
+    <Compile Remove="Areas\Sales\Models\**" />
+    <Compile Remove="Controllers\**" />
+    <Content Remove="Areas\Sales\Data\**" />
+    <Content Remove="Areas\Sales\Models\**" />
+    <Content Remove="Controllers\**" />
+    <EmbeddedResource Remove="Areas\Sales\Data\**" />
+    <EmbeddedResource Remove="Areas\Sales\Models\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <None Remove="Areas\Sales\Data\**" />
+    <None Remove="Areas\Sales\Models\**" />
+    <None Remove="Controllers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\Admin\Views\User\Edit.cshtml" />
+    <None Include="Areas\Admin\Views\User\Index.cshtml" />
+    <None Include="Areas\Sales\Views\Cart\Index.cshtml" />
+    <None Include="Areas\Sales\Views\Cart\Summary.cshtml" />
+    <None Include="Areas\Sales\Views\Order\Confirm.cshtml" />
+    <None Include="Areas\Sales\Views\Order\ManageOrder.cshtml" />
+    <None Include="Areas\Sales\Views\Order\OrderHistory.cshtml" />
+    <None Include="Areas\Sales\Views\Order\OrderPickup.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="datatables" Version="1.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.6" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.6" />
@@ -14,12 +40,9 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.6" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="Stripe.net" Version="39.53.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Areas\Sales\Data\" />
-    <Folder Include="Areas\Sales\Models\" />
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
 
 </Project>

@@ -18,7 +18,7 @@ namespace TecnologyShop.Models
         [NotMapped]
         [ForeignKey("ApplicationUserId")]
         public virtual ApplicationUser ApplicationUser { get; set; }
-        public int MenuItemId { get; set; }
+        public int CatalogueItemID { get; set; }
         [NotMapped]
         [ForeignKey("CatalogueItemId")]
         public virtual CatalogueItem CatalogueItem { get; set; }

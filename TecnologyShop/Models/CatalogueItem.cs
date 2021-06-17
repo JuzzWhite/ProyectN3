@@ -15,7 +15,7 @@ namespace TecnologyShop.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public string Stock { get; set; }
-        public enum OnStock { OnStock=1, OutStock=0}
+        public enum OnStock { OnStock = 1, OutStock = 0 }
         public string Image { get; set; }
         [Display(Name = "Category")]
         public int CategoryId { get; set; }

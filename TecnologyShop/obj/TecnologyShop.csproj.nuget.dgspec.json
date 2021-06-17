@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jerry\\Desktop\\copia proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj": {}
+    "Z:\\Archivos de Biblioteca\\Desktop\\Proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jerry\\Desktop\\copia proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj": {
+    "Z:\\Archivos de Biblioteca\\Desktop\\Proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jerry\\Desktop\\copia proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj",
+        "projectUniqueName": "Z:\\Archivos de Biblioteca\\Desktop\\Proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj",
         "projectName": "TecnologyShop",
-        "projectPath": "C:\\Users\\Jerry\\Desktop\\copia proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj",
-        "packagesPath": "C:\\Users\\Jerry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jerry\\Desktop\\copia proyecto\\ProyectN3\\TecnologyShop\\obj\\",
+        "projectPath": "Z:\\Archivos de Biblioteca\\Desktop\\Proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj",
+        "packagesPath": "C:\\Users\\Ramir\\.nuget\\packages\\",
+        "outputPath": "Z:\\Archivos de Biblioteca\\Desktop\\Proyecto\\ProyectN3\\TecnologyShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Programacion\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jerry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ramir\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -73,6 +72,10 @@
               "target": "Package",
               "version": "[5.0.2, )"
             },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[39.53.0, )"
+            },
             "datatables": {
               "target": "Package",
               "version": "[1.0.0, )"
@@ -96,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
