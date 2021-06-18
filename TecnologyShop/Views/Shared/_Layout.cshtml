@@ -107,13 +107,24 @@
                                     </a>
                                 </li>
                             }
-                            else
+                            else // revisar pues hay una fuga de datos
                             {
-                                <li style="color:white">
+                                 <li style="color:white">
+                                    <a asp-area="Customer" asp-controller="Cart" asp-action="Index" class="nav-link">
+                                        @{
+                                            var count = HttpContextAccessor.HttpContext.Session.GetInt32(
+                                                SD.ssShoppingCartCount);
+                                        }
+                                        <i class="fas fa-shopping-cart"></i> &nbsp;(@count)
+
+                                    </a>
+                                </li>
+
+                                @*<li style="color:white">
                                     <a href="#" class="nav-link">
                                         <i class="fas fa-shopping-cart"></i> &nbsp;(0)
                                     </a>
-                                </li>
+                                </li>*@
 
                             }
                         }

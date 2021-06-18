@@ -34,7 +34,15 @@ namespace TecnologyShop.Controllers
                 Category = await _db.Category.ToListAsync(),
                 Coupon = await _db.Coupon.Where(x => x.IsActive == true).ToListAsync()
             };
-
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            //notificación que especifica el nombre de una entidad
+            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+            if (claim != null)
+            {
+                var cnt = _db.ShoppingCart.Where(u => u.ApplicationUserId
+                                 == claim.Value).ToList().Count;
+                HttpContext.Session.SetInt32(SD.ssShoppingCartCount, cnt);
+            }
             return View(model);
         }
 
