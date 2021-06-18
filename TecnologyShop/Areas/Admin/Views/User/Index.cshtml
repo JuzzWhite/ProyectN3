@@ -47,6 +47,8 @@
                             <td>
                                 @Html.DisplayFor(m => item.PhoneNumber)
                             </td>
+                            <td></td>
+                            <td></td>
                             <td>
                                 @if (item.LockoutEnd == null || item.LockoutEnd < DateTime.Now)
                                 {
@@ -61,7 +63,7 @@
                                     </a>
                                 }
                             </td>
-                            <td>
+                            @*<td>
                                 <a class="btn btn-danger text-white" asp-action="Edit" asp-route-id="@item.Id">
                                     <i class="fas fa-edit"></i>
                                 </a>
@@ -70,7 +72,8 @@
                                 <a class="btn btn-danger text-white" asp-action="Details" asp-route-id="@item.Id">
                                     <i class="fas fa-list-alt"></i>
                                 </a>
-                            </td>
+                            </td>*@
+                            
                             <td>
                                 <a class="btn btn-danger text-white" asp-action="Delete" asp-route-id="@item.Id">
                                     <i class="fas fa-trash-alt"></i>
