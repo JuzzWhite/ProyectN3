@@ -74,7 +74,7 @@ namespace TecnologyShop.Areas.Customer.Controllers
         }
 
 
-        //[Authorize(Roles = SD.ManagerUser + "," + SD.SalesAgent)] 
+        [Authorize(Roles = SD.ManagerUser + "," + SD.SalesAgent)] 
         public async Task<IActionResult> ManageOrder()
         {
             List<OrderDetailsViewModel> orderDetailsVM = new List<OrderDetailsViewModel>();
