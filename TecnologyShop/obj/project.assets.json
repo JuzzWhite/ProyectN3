@@ -7640,23 +7640,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ramir\\.nuget\\packages\\": {},
-    "C:\\Programacion\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Jerry\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\Archivos de Biblioteca\\Desktop\\Proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj",
+      "projectUniqueName": "C:\\Users\\Jerry\\Desktop\\copia proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj",
       "projectName": "TecnologyShop",
-      "projectPath": "Z:\\Archivos de Biblioteca\\Desktop\\Proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj",
-      "packagesPath": "C:\\Users\\Ramir\\.nuget\\packages\\",
-      "outputPath": "Z:\\Archivos de Biblioteca\\Desktop\\Proyecto\\ProyectN3\\TecnologyShop\\obj\\",
+      "projectPath": "C:\\Users\\Jerry\\Desktop\\copia proyecto\\ProyectN3\\TecnologyShop\\TecnologyShop.csproj",
+      "packagesPath": "C:\\Users\\Jerry\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jerry\\Desktop\\copia proyecto\\ProyectN3\\TecnologyShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Programacion\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ramir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jerry\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7738,7 +7740,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

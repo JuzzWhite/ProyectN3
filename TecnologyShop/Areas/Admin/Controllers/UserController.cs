@@ -63,9 +63,12 @@ namespace TecnologyShop.Areas.Admin.Controllers
             _db.Users.Remove(user);
             await _db.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+            
         }
+
+
         [HttpGet]
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(string?id)
         {
             if (id == null)
             {
@@ -78,9 +81,12 @@ namespace TecnologyShop.Areas.Admin.Controllers
             }
             return View(user);
         }
-        [HttpPost]
+
+
+        [HttpPost, ActionName("Edit")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id)
+
+        public async Task<IActionResult> Edited(string id)
         {
             if (id == null)
             {
