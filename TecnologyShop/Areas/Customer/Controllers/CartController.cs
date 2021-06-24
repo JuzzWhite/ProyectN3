@@ -41,8 +41,7 @@ namespace TecnologyShop.Areas.Admin.Controllers
             foreach (var list in detailCart.listCart)
             {
                 list.CatalogueItem = await _db.CatalogueItem.FirstOrDefaultAsync(m => m.Id == list.CatalogueItemID);
-                detailCart.OrderHeader.OrderTotal = detailCart.OrderHeader.OrderTotal +
-                    (list.CatalogueItem.Price * list.Count);
+                detailCart.OrderHeader.OrderTotal = detailCart.OrderHeader.OrderTotal + (list.CatalogueItem.Price * list.Count);
 
                 list.CatalogueItem.Description = SD.ConvertToRawHtml(list.CatalogueItem.Description);
                 if (list.CatalogueItem.Description.Length > 100)
