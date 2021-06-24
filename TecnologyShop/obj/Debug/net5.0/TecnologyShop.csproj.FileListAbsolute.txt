@@ -921,19 +921,12 @@ C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\R
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Coupon\Edit.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Coupon\Details.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\Coupon\Delete.cshtml.g.cs
-C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\bin\Debug\net5.0\libman.json
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Views\Shared\_ThumbnailAreaPartial.cshtml.g.cs
-C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\Views\Home\Index.cshtml.g.cs
-C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\_ViewImports.cshtml.g.cs
-C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Sales\_ViewStart.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ForgotPassword.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
-C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.cshtml.g.cs
-C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
-C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPassword.cshtml.g.cs
 C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
@@ -1349,7 +1342,6 @@ Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\bin\Debug\net
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\TecnologyShop.csprojAssemblyReference.cache
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\TecnologyShop.GeneratedMSBuildEditorConfig.editorconfig
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\TecnologyShop.AssemblyInfoInputs.cache
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\TecnologyShop.AssemblyInfo.cs
@@ -1432,24 +1424,6 @@ Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\bin\Debug\net5.0\Stripe.net.dll
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\Edit.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\Index.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\ChangePassword.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\DeletePersonalData.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\Disable2fa.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\DownloadPersonalData.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\Email.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\EnableAuthenticator.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\ExternalLogins.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\GenerateRecoveryCodes.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\Index.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\PersonalData.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\ResetAuthenticator.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\SetPassword.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\ShowRecoveryCodes.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\TwoFactorAuthentication.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\_Layout.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\_ManageNav.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\_StatusMessage.cshtml.g.cs
-Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manager\_ViewImports.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Cart\Index.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Cart\Summary.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Details.cshtml.g.cs
@@ -1461,3 +1435,68 @@ Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Order\OrderPickup.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\_ViewImports.cshtml.g.cs
 Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\_ViewStart.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\bin\Debug\net5.0\Stripe.net.dll
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\Edit.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\Index.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Cart\Index.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Cart\Summary.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Details.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Index.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Order\Confirm.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Order\ManageOrder.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Order\OrderHistory.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\Views\Order\OrderPickup.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\_ViewImports.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Customer\_ViewStart.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\AccessDenied.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ConfirmEmailChange.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ExternalLogin.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ForgotPasswordConfirmation.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Lockout.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\LoginWith2fa.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\LoginWithRecoveryCode.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResendEmailConfirmation.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\ResetPasswordConfirmation.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_StatusMessage.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Views\Shared\_IndividualOrderDetails.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Views\Shared\_OrderStatus.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Email.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\ShowRecoveryCodes.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_Layout.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.cshtml.g.cs
+C:\Users\Jerry\Desktop\copia proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\ChangePassword.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\DeletePersonalData.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Disable2fa.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\DownloadPersonalData.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Email.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\ExternalLogins.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\GenerateRecoveryCodes.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\Index.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\PersonalData.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\ResetAuthenticator.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\SetPassword.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\ShowRecoveryCodes.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\TwoFactorAuthentication.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_Layout.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_StatusMessage.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+Z:\Archivos de Biblioteca\Desktop\Proyecto\ProyectN3\TecnologyShop\obj\Debug\net5.0\TecnologyShop.csprojAssemblyReference.cache

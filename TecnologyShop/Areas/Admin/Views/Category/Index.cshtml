@@ -20,31 +20,32 @@
     <div>
         @if (Model.Count() > 0)
         {
-            <table class="content-table table table-hover">
+            <table id="Tabla" class="content-table table table-hover">
                 <thead>
                     <tr>
                         <th>
                             @Html.DisplayNameFor(m => m.Name)
                         </th>
                         <th>@Html.DisplayNameFor(m => m.RegisterDate)</th>
-                        <th></th>
+
                         <th>Maintenance</th>
                     </tr>
                 </thead>
                 @foreach (var item in Model)
-                {<tbody>
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(m => item.Name)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(m => item.RegisterDate)
-                        </td>
-                        <td>
+                {
+                    <tbody>
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(m => item.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => item.RegisterDate)
+                            </td>
+
                             <partial name="_TableButtonPartial" model="item.Id" />
-                        </td>
-                    </tr>
-                </tbody>
+
+                        </tr>
+                    </tbody>
                 }
             </table>
         }
@@ -54,3 +55,12 @@
         }
     </div>
 </div>
+<script src="~/js/datatables.min.js"></script>
+@section scripts{
+
+    <script>
+        $(this.document).ready(function () {
+            $('#Tabla'.DataTable());
+        });
+    </script>
+}

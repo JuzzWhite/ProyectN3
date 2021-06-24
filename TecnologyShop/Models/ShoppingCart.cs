@@ -20,7 +20,7 @@ namespace TecnologyShop.Models
         public virtual ApplicationUser ApplicationUser { get; set; }
         public int CatalogueItemID { get; set; }
         [NotMapped]
-        [ForeignKey("CatalogueItemId")]
+        [ForeignKey("CatalogueItemID")]
         public virtual CatalogueItem CatalogueItem { get; set; }
         [Range(1, int.MaxValue, ErrorMessage =
                "Please enter a value greater than or equal to {1}")]

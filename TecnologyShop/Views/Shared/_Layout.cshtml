@@ -15,9 +15,12 @@
     <link href="~/css/footer.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.min.css" />
+    <link href="~/css/datatables.min.css" rel="stylesheet" />
 
-
-
+    @*
+        Libreria sweetalert2
+    *@
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.18/sweetalert2.min.js/"/>
 
 </head>
 <body>
@@ -25,7 +28,7 @@
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-white bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="Customer" asp-controller="Home" asp-action="Index">
-                    @*<img src="~/images/LogoLargoTS.png" style="width:30%; height:20%;" />*@
+                    <img src="~/images/LogoLargoTS.png" style="width:30%; height:20%;" />
                     TechnologyShop
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -149,6 +152,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/datatables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)

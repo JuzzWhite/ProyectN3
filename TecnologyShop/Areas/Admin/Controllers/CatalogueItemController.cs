@@ -41,7 +41,7 @@ namespace TecnologyShop.Areas.Admin.Controllers
         }
 
         //get-create
-        public async Task<IActionResult> Create()
+        public  IActionResult Create()
         {
             return View(catalogueVM);
         }
@@ -69,7 +69,7 @@ namespace TecnologyShop.Areas.Admin.Controllers
 
                var prodItemFormDB = await _db.CatalogueItem.FindAsync(catalogueVM.CatalogueItem.Id);
 
-               if (files.Count() > 0)
+               if (files.Count > 0)
                {
                    //files has been uploaded
                    var uploads = Path.Combine(WebRootPath, "Images");

@@ -27,7 +27,6 @@
                     <th>@Html.DisplayNameFor(m => m.Name)</th>
                     <th>@Html.DisplayNameFor(m => m.Price)</th>
                     <th>@Html.DisplayNameFor(m => m.SubCategory)</th>
-                    <th></th>
                     <th>Maintenance</th>
                 </tr>
             </thead>
@@ -43,10 +42,9 @@
                         </td>
                         <td>
                             @Html.DisplayFor(m => item.SubCategory.Name)
-                         </td>
-                        <td>
-                            <partial name="_TableButtonPartial" model="item.Id" />
                         </td>
+                        <partial name="_TableButtonPartial" model="item.Id" />
+                        
                     </tr>
                 </tbody>
 
@@ -67,7 +65,7 @@
    
     <script>
         $(this.document).ready(function () {
-            $('.table'.DataTable());
+            $('#Tabla'.DataTable());
         });
     </script>
 }
