@@ -1,6 +1,6 @@
 ﻿using TecnologyShop.Data;
 using TecnologyShop.Models;
-using TecnologyShop.Models.View_Models;
+using TecnologyShop.Models.View_Model;
 using TecnologyShop.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;

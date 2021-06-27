@@ -36,7 +36,7 @@ namespace TecnologyShop.Areas.Admin.Controllers
                 {
                     CategoryList = await _db.Category.ToListAsync(),
                     SubCategory = new Models.SubCategory(),
-                    subCategoryList = await _db.SubCategory.OrderBy(x => x.Name).Select(x => x.Name).Distinct().ToListAsync()
+                    SubCategoryList = await _db.SubCategory.OrderBy(x => x.Name).Select(x => x.Name).Distinct().ToListAsync()
                 };
 
             return View(model);
@@ -71,7 +71,7 @@ namespace TecnologyShop.Areas.Admin.Controllers
             {
                 CategoryList = await _db.Category.ToListAsync(),
                 SubCategory = model.SubCategory,
-                subCategoryList = await _db.SubCategory.OrderBy(p => p.Name).Select(p => p.Name).ToListAsync(),
+                SubCategoryList = await _db.SubCategory.OrderBy(p => p.Name).Select(p => p.Name).ToListAsync(),
                 StatusMessage = StatusMessage
             };
             return View(modelVM);
@@ -98,7 +98,7 @@ namespace TecnologyShop.Areas.Admin.Controllers
             {
                 CategoryList = await _db.Category.ToListAsync(),
                 SubCategory = subCategory,
-                subCategoryList = await _db.SubCategory.OrderBy(p =>
+                SubCategoryList = await _db.SubCategory.OrderBy(p =>
                       p.Name).Select(p => p.Name).Distinct().ToListAsync()
             };
 
@@ -133,7 +133,7 @@ namespace TecnologyShop.Areas.Admin.Controllers
             {
                 CategoryList = await _db.Category.ToListAsync(),
                 SubCategory = model.SubCategory,
-                subCategoryList = await _db.SubCategory.OrderBy(p => p.Name).Select(p => p.Name).ToListAsync(),
+                SubCategoryList = await _db.SubCategory.OrderBy(p => p.Name).Select(p => p.Name).ToListAsync(),
                 StatusMessage = StatusMessage
             };
             //modelVM.SubCategory.Id = id;

@@ -1,4 +1,4 @@
-﻿@model List<TecnologyShop.Models.View_Models.OrderDetailsViewModel>
+﻿@model List<TecnologyShop.Models.View_Model.OrderDetailsViewModel>
 @using TecnologyShop.Utility
 @{
     ViewData["Title"] = "ManageOrder";
@@ -52,7 +52,7 @@
                                         <button type="submit" asp-action="OrderPrepare"
                                                 asp-route-OrderId="@item.OrderHeader.Id"
                                                 class="btn btn-info form-control mb-3">
-                                            <i class="fas fa-check"></i> &nbsp; Start Cooking
+                                            <i class="fas fa-check"></i> &nbsp; Start packaging
                                         </button>
                                         <button type="submit" asp-action="OrderCancel"
                                                 asp-route-OrderId="@item.OrderHeader.Id"

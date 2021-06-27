@@ -68,7 +68,7 @@ namespace TecnologyShop.Areas.Admin.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> Edit(string?id)
+        public async Task<IActionResult> Edit(int?id)
         {
             if (id == null)
             {

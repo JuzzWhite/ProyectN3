@@ -1,4 +1,4 @@
-﻿@model TecnologyShop.Models.View_Models.OrderDetailsCart
+﻿@model TecnologyShop.Models.View_Model.OrderDetailsCart
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -42,7 +42,7 @@
                                                     var total = @item.CatalogueItem.Price * @item.Count;
                                                 }
                                                 @total.ToString("#.##")
-                                                @*@(item.MenuItem.Price * item.Count)*@
+                                                @(item.CatalogueItem.Price * item.Count)
                                             </strong>
                                         </h6>
                                     </div>

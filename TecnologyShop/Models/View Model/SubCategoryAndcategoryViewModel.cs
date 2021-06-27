@@ -14,7 +14,7 @@ namespace TecnologyShop.Models.View_Model
         public SubCategory SubCategory { get; set; }
 
         //genera lista de subcategory
-        public List<String> subCategoryList { get; set; }
+        public List<String> SubCategoryList { get; set; }
 
         //para desplegar un mensaje de estado de la accion a realizar
         public string StatusMessage { get; set; }
