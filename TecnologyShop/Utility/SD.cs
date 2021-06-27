@@ -9,7 +9,11 @@ namespace TecnologyShop.Utility
     public class SD
     {
 
+<<<<<<< HEAD
         //public const string DefaultFoodImage = "LogoLargoTS.png";
+=======
+        public const string DefaultFoodImage = "LogoLargoTS.png";
+>>>>>>> cbb650ca02bab39155ce3f15953ba4ff265162aa
         public const string ManagerUser = "Manager"; //el mero bicho
         public const string SalesAgent = "SalesAgent"; //el agente que vendo en este caso seria como el kitchen del profe
         public const string CustomerUser = "Customer"; //el que compra

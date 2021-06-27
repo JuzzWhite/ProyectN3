@@ -104,10 +104,19 @@
                     <a asp-action="Index" class="btn btn-success form-control">Back to List</a>
                 </div>
                 <div class="col-md-4">
-                    <button type="submit" value="Add to Cart"
-                            class="btn btn-primary form-control">
-                        Add to Cart
-                    </button>
+                    @if (Model.CatalogueItem.Stock == "1")
+                    {
+                        <button type="submit" value="Add to Cart"
+                                class="btn btn-primary form-control">
+                                Add to Cart
+                        </button>
+                     }
+                     else {
+                <button disabled type="submit" value="Add to Cart"
+                        class="btn btn-danger form-control">
+                    not available
+                </button>
+                     }
                 </div>
             </div>
         </div>
