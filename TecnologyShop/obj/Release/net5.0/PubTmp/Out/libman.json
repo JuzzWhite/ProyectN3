@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "jqueryui@1.12.1",
+      "destination": "wwwroot/lib/jqueryui/"
+    },
+    {
+      "library": "datatable@2.0.1",
+      "destination": "wwwroot/datatable/"
+    },
+    {
+      "library": "datatables@1.10.19",
+      "destination": "wwwroot/datatables/"
+    },
+    {
+      "library": "datatables@1.10.0",
+      "destination": "wwwroot/lib/datatables/"
+    }
+  ]
+}

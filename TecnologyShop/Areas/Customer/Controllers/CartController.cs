@@ -1,6 +1,6 @@
 ﻿using TecnologyShop.Data;
 using TecnologyShop.Models;
-using TecnologyShop.Models.View_Models;
+using TecnologyShop.Models.View_Model;
 using TecnologyShop.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -41,7 +41,7 @@ namespace TecnologyShop.Areas.Admin.Controllers
             foreach (var list in detailCart.listCart)
             {
                 list.CatalogueItem = await _db.CatalogueItem.FirstOrDefaultAsync(m => m.Id == list.CatalogueItemID);
-                detailCart.OrderHeader.OrderTotal = detailCart.OrderHeader.OrderTotal + (list.CatalogueItem.Price * list.Count);
+                detailCart.OrderHeader.OrderTotal = detailCart.OrderHeader.OrderTotal + (list.CatalogueItem.Price * list.Count); //////
 
                 list.CatalogueItem.Description = SD.ConvertToRawHtml(list.CatalogueItem.Description);
                 if (list.CatalogueItem.Description.Length > 100)
@@ -141,7 +141,7 @@ namespace TecnologyShop.Areas.Admin.Controllers
                 item.CatalogueItem = await _db.CatalogueItem.FirstOrDefaultAsync(m => m.Id == item.CatalogueItemID);
                 OrderDetails orderDetails = new OrderDetails
                 {
-                    CatalogueItemId = item.CatalogueItemID,
+                    CatalogueItemID = item.CatalogueItemID,
                     OrderId = detailCart.OrderHeader.Id,
                     Description = item.CatalogueItem.Description,
                     Name = item.CatalogueItem.Name,

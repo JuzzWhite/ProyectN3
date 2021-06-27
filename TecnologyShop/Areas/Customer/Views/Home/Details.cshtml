@@ -75,14 +75,16 @@
                     <input asp-for="CatalogueItem.SubCategory.Name" readonly class="form-control" />
                 </div>
             </div>
-            <div class="form-group row">
-                <div class="col-md-4">
-                    <label asp-for="CatalogueItem.Stock" name="bbb" class="text-info font-weight-bold"></label>
+            <fieldset disabled>
+                <div class="form-group row">
+                    <div class="col-md-4">
+                        <label asp-for="CatalogueItem.Stock" name="bbb" class="text-info font-weight-bold"></label>
+                    </div>
+                    <div class="col-md-8">
+                        <select asp-for="CatalogueItem.Stock" asp-items="Html.GetEnumSelectList<CatalogueItem.OnStock>()" class="field"></select>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <input asp-for="CatalogueItem.Stock" readonly class="form-control" />
-                </div>
-            </div>
+            </fieldset>
 
             <div class="form-group row">
                 <div class="col-md-4">

@@ -7,7 +7,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <br />
-<h2 class="text-info">Edit Sub Category</h2>
+<h2>Edit Sub Category</h2>
 <br />
 
 <partial name="_StatusMessagePartial" model="Model.StatusMessage" />
@@ -45,7 +45,7 @@
         </form>
     </div>
     <div class="col-3 offset-1">
-        @if (Model.subCategoryList.Count() > 0)
+        @if (Model.SubCategoryList.Count() > 0)
         {
             <p> Existing Subcategories: </p>
 

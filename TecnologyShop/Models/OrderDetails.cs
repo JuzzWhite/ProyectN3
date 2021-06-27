@@ -16,9 +16,9 @@ namespace TecnologyShop.Models
         [ForeignKey("OrderId")]
         public virtual OrderHeader OrderHeader { get; set; }
         [Required]
-        public int CatalogueItemId { get; set; }
+        public int CatalogueItemID { get; set; }
 
-        [ForeignKey("CatalogueItemId")]
+        [ForeignKey("CatalogueItemID")]
         public virtual CatalogueItem CatalogueItem { get; set; }
         public int Count { get; set; }
         public string Name { get; set; }
