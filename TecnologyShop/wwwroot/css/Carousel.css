@@ -1,0 +1,15 @@
+﻿
+/*.carousel-item{
+    border: 55px solid transparent;
+    padding: 35px;
+    border-image: url(../Images/yellow-border.png) round;
+    border-image-slice: 30%;
+}*/
+
+
+.carousel img {
+    border: 7px;
+    border-style: dashed;
+    border-color: black;
+    
+}

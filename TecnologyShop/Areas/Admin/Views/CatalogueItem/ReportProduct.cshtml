@@ -1,0 +1,82 @@
+﻿<link href="~/css/FormReports.css" rel="stylesheet" />
+@model TecnologyShop.Models.View_Model.CatalogueViewModel
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_EmptyLayout.cshtml";
+}
+
+
+<form class="form">
+    <div class="form-group row">
+        <div class="col-4">
+            <label asp-for="CatalogueItem.Name" class="custom-label"></label>
+        </div>
+        <div class="col-8">
+            <input asp-for="CatalogueItem.Name" class="field" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-4">
+            <label asp-for="CatalogueItem.Description" class="custom-label"></label>
+        </div>
+        <div class="col-8">
+            @Html.TextAreaFor(m => m.CatalogueItem.Description,
+                   new { rows = "3", cols = "56", @class = "text-area" })
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-4">
+            <label asp-for="CatalogueItem.Price" class="custom-label"></label>
+        </div>
+        <div class="col-8">
+            <input asp-for="CatalogueItem.Price" class="field" />
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <div class="col-4">
+            <label asp-for="CatalogueItem.CategoryId" class="custom-label"></label>
+        </div>
+        <div class="col-8">
+            <input asp-for="CatalogueItem.Category.Name" class="field" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-4">
+            <label asp-for="CatalogueItem.SubCategoryId" class="custom-label"></label>
+        </div>
+        <div class="col-8">
+            <input asp-for="CatalogueItem.SubCategory.Name" class="field" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-4">
+            <label asp-for="CatalogueItem.Stock" class="custom-label"></label>
+        </div>
+        <div class="col-8">
+            <select asp-for="CatalogueItem.Stock" asp-items="Html.GetEnumSelectList<CatalogueItem.OnStock>()" class="field"></select>
+        </div>
+    </div>
+
+    <div class="col-1"></div>
+    <div class="col-3">
+        <img src="@Model.CatalogueItem.Image" style="width:100%;border-radius:5px;border:1px solid #bbb9b9;" />
+    </div>
+    <div class="col-8">
+        @*<div class="col-8 offset-4">
+                <partial name="_DetailsAndBackToListButton" model="Model.CatalogueItem.Id" />
+            </div>*@
+    </div>
+</form>
+    @section Scripts{
+        <script>
+            tinymce.init({
+                selector: 'textarea',
+                plugins: "lists",
+                toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist",
+                menubar: 'file edit format',
+                readonly: 1
+            });</script>
+        <script>tinymce.init({ selector: 'textarea' });</script>
+
+    }

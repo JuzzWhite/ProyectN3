@@ -1,0 +1,121 @@
+﻿<link href="~/css/disenoTablas.css" rel="stylesheet" />
+@model IEnumerable<ApplicationUser>
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+    <br />
+    <br />
+    <div class="container border backgroundWhite">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="text-info">Employee List</h2>
+            </div>
+            <div class="col-6 text-right">
+                <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-info">
+                    <i class="fas fa-plus"></i>&nbsp;New Employee Registration </a>
+            </div>
+        </div>
+        
+        
+        @if (Model.Count() > 0)
+        {
+            <table table id="TbUser" class="content-table table table border">
+                <thead>
+                    <tr>
+                        <th hidden>
+                            @Html.DisplayNameFor(m => m.Id)
+                        </th>
+                        <th> @Html.DisplayNameFor(m => m.Name) </th>
+                        <th> @Html.DisplayNameFor(m => m.Email) </th>
+                        <th> @Html.DisplayNameFor(m => m.PhoneNumber) </th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td hidden> 
+                                 @Html.DisplayFor(m => item.Id) </td>
+                            <td> @Html.DisplayFor(m => item.Name) </td>
+                            <td> @Html.DisplayFor(m => item.Email) </td>
+                            <td> @Html.DisplayFor(m => item.PhoneNumber) </td>
+                            
+                            <td>
+                                @if (item.LockoutEnd == null || item.LockoutEnd < DateTime.Now)
+                                {
+                                    <a class="btn btn-success text-white" asp-action="Lock" asp-route-id="@item.Id">
+                                        <i class="fas fa-lock-open"></i>
+                                    </a>
+                                }
+                                else
+                                {
+                                    <a class="btn btn-danger text-white" asp-action="UnLock" asp-route-id="@item.Id">
+                                        <i class="fas fa-lock"></i>
+                                    </a>
+                                }
+                            </td>
+                            <td> <a class="btn btn-danger text-white" asp-action="Edit" asp-route-id="@item.Id"> <i class="fas fa-edit"></i> </a> </td>
+                            <td> <a class="btn btn-danger text-white" asp-action="Details" asp-route-id="@item.Id"> <i class="fas fa-list-alt"></i> </a> </td>
+                            <td> <a class="btn btn-danger text-white" asp-action="Delete" asp-route-id="@item.Id"> <i class="fas fa-trash-alt"></i> </a> </td>
+                        
+                        </tr>
+
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <h3 style="color:red;">No Employee Exists...</h3>
+        }
+        
+    </div>
+
+@section scripts{
+
+    <script>
+        $(document).ready(function () {
+            $('#TbUser').DataTable({
+                responsive: "true",
+                dom: "B<'row'<'col-sm-12 col-md-6'l> <'col-sm-12 col-md-6'f>>" +
+                    "<'row'<'col-sm-12'tr>>" +
+                    "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
+
+                buttons: [
+
+                    {
+                        extend: 'excelHtml5',
+                        text: '<i class="fas fa-file-excel"></i> Excel ',
+                        titleAttr: 'Exportar a Excel',
+                        className: 'btn btn-success',
+
+                    },
+                    {
+                        extend: 'pdfHtml5',
+                        text: '<i class="fas fa-file-pdf"></i> Pdf',
+                        titleAttr: 'Exportar a PDF',
+                        className: 'btn btn-danger'
+                    },
+                    {
+                        onclick: 'columna',
+                        extend: 'print',
+                        text: '<i class="fa fa-print"></i> Print',
+                        titleAttr: 'Imprimir',
+                        className: 'btn btn-info'
+
+                    },
+
+                ]
+            });
+        });
+    </script>
+}
+

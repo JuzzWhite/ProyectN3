@@ -1,0 +1,104 @@
+﻿<link href="~/css/disenoTablas.css" rel="stylesheet" />
+
+@model IEnumerable<CatalogueItem>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<div class="container border backgroundWhite">
+    <div class="row">
+        <div class="col-6">
+            <h2> Product List</h2>
+        </div>
+        <div class="col-6 text-right">
+            <partial name="_CreateButtonPartial" />
+        </div>
+    </div>
+    
+
+    @if (Model.Count() > 0)
+    {
+
+        <table table id="TbOrderHistory" class="content-table table table border">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(m => m.Name)</th>
+                    <th>@Html.DisplayNameFor(m => m.Price)</th>
+                    <th>@Html.DisplayNameFor(m => m.SubCategory)</th>
+                    <th>Manteniance</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(m => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.Price)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(m => item.SubCategory.Name)
+                        </td>
+
+                        <td><partial name="_TableButtonPartialReport" model="item.Id" /></td>
+
+                    </tr>
+                }
+            </tbody>
+            
+        </table>
+        @*<link href="~/datatable/css/datatable.css" rel="stylesheet" />*@
+    }
+    else
+    {
+        <p>No Sub Category exists...</p>
+    }
+
+</div>
+
+@*<script src="~/datatable/js/datatable.js"></script>*@
+@section scripts{
+   
+    <script>
+        $(document).ready(function () {
+            $('#TbOrderHistory').DataTable({
+                responsive: "true",
+                dom: "B<'row'<'col-sm-12 col-md-6'l> <'col-sm-12 col-md-6'f>>" +
+                    "<'row'<'col-sm-12'tr>>" +
+                    "<'row'<'col-sm-12 col-md-5'i><'col-sm-12 col-md-7'p>>",
+
+                buttons: [
+
+                    {
+                        extend: 'excelHtml5',
+                        text: '<i class="fas fa-file-excel"></i> Excel ',
+                        titleAttr: 'Exportar a Excel',
+                        className: 'btn btn-success',
+
+                    },
+                    {
+                        extend: 'pdfHtml5',
+                        text: '<i class="fas fa-file-pdf"></i> Pdf',
+                        titleAttr: 'Exportar a PDF',
+                        className: 'btn btn-danger'
+                    },
+                    {
+                        onclick: 'columna',
+                        extend: 'print',
+                        text: '<i class="fa fa-print"></i> Print',
+                        titleAttr: 'Imprimir',
+                        className: 'btn btn-info'
+
+                    },
+
+                ]
+            });
+        });
+    </script>
+}

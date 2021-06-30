@@ -1,0 +1,89 @@
+﻿<link href="~/css/forms.css" rel="stylesheet" />
+@model TecnologyShop.Models.Coupon
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<br />
+<h2>Edit Coupon</h2>
+<br />
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <div class=" row backgroundWhiteBorder">
+        <br />
+        <div class="col-12 border">
+            @{
+                var base64 = Convert.ToBase64String(Model.picture);
+                var imgsrc = string.Format("data:image/jpg;base64,{0}", base64);
+            }
+            <img src="@imgsrc" style="height:100%;width:100%" />
+        </div>
+        <div class="form col-12 pt-4">
+            <input hidden asp-for="Id" />
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Name" class="custom-label"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="Name" class="field" />
+                </div>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="picture" class="custom-label"></label>
+                </div>
+                <div class="col-5">
+                    <input type="file" id="projectImage" name="files"
+                           multiple class="field" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="CouponType" class="custom-label"></label>
+                </div>
+                <div class="col-5">
+                    <select asp-for="CouponType"
+                            asp-items="Html.GetEnumSelectList<Coupon.ECouponType>()"
+                            class="field form-control"></select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="Discount" class="custom-label"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="Discount" class="field" />
+                </div>
+                <span asp-validation-for="Discount" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="MinimunAmount" class="custom-label"></label>
+                </div>
+                <div class="col-5">
+                    <input asp-for="MinimunAmount" class="field" />
+                </div>
+                <span asp-validation-for="MinimunAmount" class="text-danger"></span>
+            </div>
+            <div class="form-group row">
+                <div class="col-2">
+                    <label asp-for="IsActive" class="custom-label"></label>
+                </div>
+                <div class="col-5">
+                    <input type="checkbox" asp-for="IsActive" class="field" />
+                </div>
+            </div>
+            <br />
+            <div class="form-group row">
+                <div class="col-5 offset-2">
+                    <partial name="_EditAndBackToListButton" model="Model.Id" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+</form>
+<br />
+<br />
+<br />

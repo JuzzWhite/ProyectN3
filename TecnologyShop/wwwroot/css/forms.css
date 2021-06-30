@@ -1,0 +1,42 @@
+﻿body {
+}
+
+h2{
+    color:snow;
+}
+body {
+    background-color: rgb(18, 107, 122);
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    padding: 10px;
+    color: #999;
+    border-radius: 10px;
+}
+    label {
+        color: rgb(18, 107, 122);
+        
+    }
+
+    .form div {
+        background-color: snow;
+        font-size: 12px;
+        
+    }
+
+    input, textarea, select{
+        outline:none;
+    }
+
+    .field{
+        border: 1px solid #ccc;
+    }
+
+    .field:focus {
+      border-color: rgb(18, 107, 122);
+    }
+
+
+
